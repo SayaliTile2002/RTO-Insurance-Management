@@ -105,7 +105,7 @@ html {
 
 
 
-/* Hero Section with Image Slider */
+/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
@@ -117,31 +117,58 @@ html {
   overflow: hidden;
 }
 
-/* Background Image Slideshow */
+/* Background Slideshow */
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: url("car.jpg") no-repeat center/cover;
-  animation: slideShow 18s infinite;
-  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("f1.jpg");
+  background-size: cover;
+  background-position: center;
+
+  animation: slideShow 15s infinite;
+
+  z-index: 0;
 }
 
+/* Dark Overlay */
 .hero-overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
 }
 
-/* Slideshow Keyframes */
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Slideshow Animation */
 @keyframes slideShow {
-  0%   { background: url("f1.jpg") no-repeat center/cover; }
-  33%  { background: url("f2.jpg") no-repeat center/cover; }
-  66%  { background: url("f3.jpg") no-repeat center/cover; }
-  100% { background: url("f2.jpg") no-repeat center/cover; }
+  0% {
+    background-image: url("f1.jpg");
+  }
+
+  33% {
+    background-image: url("f2.jpg");
+  }
+
+  66% {
+    background-image: url("f3.jpg");
+  }
+
+  100% {
+    background-image: url("f1.jpg");
+  }
 }
 
 /* Hero Content */
