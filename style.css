@@ -138,10 +138,10 @@ html {
 
 /* Slideshow Keyframes */
 @keyframes slideShow {
-  0%   { background: url("images/f1.jpg") no-repeat center/cover; }
-  33%  { background: url("images/f2.jpg") no-repeat center/cover; }
-  66%  { background: url("images/f3.jpg") no-repeat center/cover; }
-  100% { background: url("images/f2.jpg") no-repeat center/cover; }
+  0%   { background: url("f1.jpg") no-repeat center/cover; }
+  33%  { background: url("f2.jpg") no-repeat center/cover; }
+  66%  { background: url("f3.jpg") no-repeat center/cover; }
+  100% { background: url("f2.jpg") no-repeat center/cover; }
 }
 
 /* Hero Content */
